@@ -3,38 +3,45 @@ package com.example.testingbarang.database;
 import java.io.Serializable;
 
 public class Barang implements Serializable{
-    private String kode;
-    private String nama;
+    String nama;
+    String telpon, kode;
 
-
-    public Barang(){
-    }
-    public String getKode(){
-        return kode;
+    public Barang() {
     }
 
-    public void Barang(String kode) {
-        this.kode = kode;
+    public Barang(String nama, String telpon) {
+        this.nama = nama;
+        this.telpon = telpon;
     }
 
-    public String getNama(){
+    public String getNama() {
         return nama;
     }
 
-    public Barang(String nama) {
+    public void setNama(String nama) {
         this.nama = nama;
     }
 
-    public Barang(String kode, String nama) {
+    public String getKode(){
+        return kode;
+    }
+    public void setKode(String kode){
         this.kode = kode;
-        this.nama = nama;
+    }
+
+    public String getTelpon() {
+        return telpon;
+    }
+
+    public void setTelpon(String telpon) {
+        this.telpon = telpon;
     }
 
     @Override
     public String toString() {
-        return "Barang{" +
-                "kode='" + kode + '\'' +
-                ", nama='" + nama + '\'' +
+        return "Teman{" +
+                "nama='" + nama + '\'' +
+                ", telpon='" + telpon + '\'' +
                 '}';
     }
 }

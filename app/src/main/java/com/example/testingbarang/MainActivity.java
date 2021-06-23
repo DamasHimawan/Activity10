@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnTambah;
+    Button btnsubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        btnTambah = findViewById(R.id.buttonsbmt);
+        btnsubmit = findViewById(R.id.buttonsbmt);
 
-        btnTambah.setOnClickListener(new View.OnClickListener() {
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, TambahData.class);
